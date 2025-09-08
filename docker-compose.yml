@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  react-app:
+  react-app-english-center:
     build: 
       context: .
       dockerfile: react-app/Dockerfile
@@ -17,7 +17,7 @@ services:
     depends_on:
       - certbot
 
-  certbot:
+  certbot-english-center:
     image: certbot/certbot
     container_name: certbot
     volumes:
